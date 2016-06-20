@@ -1,3 +1,4 @@
+###[返回根目录](https://github.com/liCat/vue-webpack-demos)
 ##step 1 基本打包
 新建目录src、release作为源文件和打包后的文件。
 src中index.html为html模板文件，index.js是入口文件，components为组件文件。

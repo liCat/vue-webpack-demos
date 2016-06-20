@@ -1,7 +1,7 @@
 {
-  "name": "demo1",
+  "name": "demo2",
   "version": "1.0.0",
-  "description": "基本的vue打包配置",
+  "description": "引入sass,less,jade等语言。",
   "main": "webpack.config.js",
   "scripts": {
     "start":"webpack",
@@ -29,6 +29,12 @@
     "babel-runtime": "^6.9.2",
     "css-loader": "^0.23.1",
     "html-webpack-plugin": "^2.21.0",
+    "jade": "^1.11.0",
+    "jade-loader": "^0.8.0",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "node-sass": "^3.8.0",
+    "sass-loader": "^3.2.1",
     "vue-hot-reload-api": "^2.0.1",
     "vue-html-loader": "^1.2.2",
     "vue-loader": "^8.5.2",
