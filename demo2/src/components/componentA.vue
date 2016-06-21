@@ -14,7 +14,7 @@
 </style>
 <style lang="less" scoped>
     .less{
-        background: #321;
+        background: #690;
         a{
             color: #f22;
         }

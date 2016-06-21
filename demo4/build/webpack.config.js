@@ -1,10 +1,12 @@
 
 const path = require('path'),
+      webpack = require('webpack'),
       HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   // 入口文件，path.resolve()方法，可以结合我们给定的两个参数最后生成绝对路径，最终指向的就是我们的index.js文件
-  entry: path.resolve(__dirname, `../src/index.js`),
+  // entry: ['webpack-hot-middleware/client',path.resolve(__dirname, `../src/index.js`)],
+  entry: ['./build/dev-client',path.resolve(__dirname, `../src/index.js`)],
   // 输出配置
   output: {
     // 输出路径是 release
@@ -41,9 +43,16 @@ module.exports = {
       }
     ]
   },
-  
+
   /*自动生成html文件,在文件中插入打包后的js文件*/
   plugins: [
+    //第一个插件生成模块或者chunk的id.
+    //第二个插件热替换.
+    //第三个插件容错.
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin(),
+
     new HtmlWebpackPlugin({
       filename: `index.html`, //相对于output.path,产出路径。
       template: path.resolve(__dirname, `../src/index.html`), //html模板,绝对路径。

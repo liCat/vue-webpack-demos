@@ -1,7 +1,7 @@
 {
   "name": "demo4",
   "version": "1.0.0",
-  "description": "自定义webpack dev server",
+  "description": "demo3+ 实现热插拔。",
   "main": "webpack.config.js",
   "scripts": {
     "start": "node ./build/dev-server.js",
@@ -42,7 +42,8 @@
     "vue-loader": "^8.5.2",
     "vue-style-loader": "^1.0.0",
     "webpack": "^1.13.1",
-    "webpack-dev-middleware": "^1.6.1"
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.10.0"
   },
   "dependencies": {
     "vue": "^1.0.25"

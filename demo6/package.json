@@ -1,11 +1,11 @@
 {
-  "name": "demo2",
+  "name": "demo6",
   "version": "1.0.0",
-  "description": "添加less、sass、jade支持,webpack-dev-server配置开发",
+  "description": "demo5+提取公共文件和css",
   "main": "webpack.config.js",
   "scripts": {
-    "start":"webpack-dev-server --config ./webpack.config.js --hot --inline --port 80",
-    "build":"webpack",
+    "start": "node ./build/dev-server.js",
+    "build": "webpack --config ./build/webpack.release.conf.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -29,6 +29,8 @@
     "babel-preset-es2015": "^6.9.0",
     "babel-runtime": "^6.9.2",
     "css-loader": "^0.23.1",
+    "express": "^4.14.0",
+    "extract-text-webpack-plugin": "^1.0.1",
     "html-webpack-plugin": "^2.21.0",
     "jade": "^1.11.0",
     "jade-loader": "^0.8.0",
@@ -40,7 +42,9 @@
     "vue-html-loader": "^1.2.2",
     "vue-loader": "^8.5.2",
     "vue-style-loader": "^1.0.0",
-    "webpack": "^1.13.1"
+    "webpack": "^1.13.1",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.10.0"
   },
   "dependencies": {
     "vue": "^1.0.25"

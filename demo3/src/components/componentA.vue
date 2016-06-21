@@ -6,7 +6,7 @@
 </template>
 <style lang="sass">
 .com_a{
-  color: #690;
+  color: #980;
     span{
         color: #f32
     }
@@ -14,7 +14,7 @@
 </style>
 <style lang="less" scoped>
     .less{
-        background: #690;
+        background: #987;
         a{
             color: #f22;
         }
