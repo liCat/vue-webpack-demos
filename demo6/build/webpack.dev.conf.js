@@ -16,6 +16,10 @@ config.output={
 };
 
 config.plugins=config.plugins.concat(
-  new webpack.HotModuleReplacementPlugin()
+  new webpack.HotModuleReplacementPlugin(),
+  new webpack.optimize.CommonsChunkPlugin({
+    name:"vendor",
+    filename:"common_[hash:4].js"
+  })
 );
 module.exports = config;
