@@ -16,4 +16,6 @@
 
 ##[demo8: demo7+多项目共用配置。](https://github.com/liCat/vue-webpack-demos/tree/master/demo8)
 
+##[demo9: demo8+接口代理及假数据](https://github.com/liCat/vue-webpack-demos/tree/master/demo9)
+
 ###在每个demo中都有一个package.json，demo必须的依赖包都列在其中。练习时可把这些安装包安装在vue-webpack-demos目录下，避免重复安装。请在运行每个demo前记得安装npm包。

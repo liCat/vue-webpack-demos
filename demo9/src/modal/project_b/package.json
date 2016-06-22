@@ -1,0 +1,15 @@
+{
+  "name": "project_b",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ../../../build/dev-server.js --pro project_b",
+    "build": "node ../../../build/build --pro project_b",
+    "build-release": "node ../../../build/build --for release --pro project_b",
+    "build-stage": "node ../../../build/build --for stage --pro project_b",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

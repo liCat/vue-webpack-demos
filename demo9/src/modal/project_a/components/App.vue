@@ -6,8 +6,8 @@
 </template>
 
 <script>
-    import ComponentA from './ComponentA.vue'
-    import ComponentB from 'src/components/ComponentB.vue'
+    import ComponentA from 'src/components/componentB.vue'
+    import ComponentB from './ComponentA.vue'
 
     export default {
         components: {

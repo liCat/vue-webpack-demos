@@ -1,7 +1,7 @@
 {
-  "name": "demo8",
+  "name": "demo9",
   "version": "1.0.0",
-  "description": "demo7+多项目共用配置",
+  "description": "demo8+接口代理及假数据",
   "main": "webpack.config.js",
   "scripts": {
     "start": "node ./build/dev-server.js --pro ",
@@ -50,6 +50,7 @@
     "webpack-hot-middleware": "^2.10.0"
   },
   "dependencies": {
-    "vue": "^1.0.25"
+    "vue": "^1.0.25",
+    "vue-resource": "^0.8.0"
   }
 }
