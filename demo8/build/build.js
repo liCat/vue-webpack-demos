@@ -9,7 +9,7 @@ if(typeof buildFor =="boolean" && buildFor ==true) buildFor=["stage","release"]
 else if (typeof buildFor == "string")buildFor = [buildFor]
 
 
-function deleteFolderRecursive (path, cb) {
+function deleteFolderRecursive (path, cb,pro) {
   var fs = require ("fs");
   var files = [];
   if (fs.existsSync (path)) {
@@ -34,8 +34,6 @@ function deleteFolderRecursive (path, cb) {
     if (!fs.rmdirSync (path)) {
       cb ();
     }
-    ;
-    
   }
   else {
     cb ();
@@ -44,11 +42,12 @@ function deleteFolderRecursive (path, cb) {
 
 /*to do deleting then to compile for every environment*/
 for(var i = 0; i < buildFor.length; i++) {(function(i){
+  
   var _for=buildFor[i];
   var _path = Path.resolve (__dirname, "../" + _for),
 
     compile = function () {
-      var config = require ("./webpack." +_for + ".conf"),
+      var config = require ("./webpack.release.conf"),
         compiler = webpack (config);
 
       compiler.run (function (err, stats) {
@@ -56,6 +55,6 @@ for(var i = 0; i < buildFor.length; i++) {(function(i){
         else console.log ("built " + _for + " bundle successfully!")
       })
     };
-  deleteFolderRecursive (_path, compile)
+  deleteFolderRecursive (_path, compile,pro)
 })(i)
 }

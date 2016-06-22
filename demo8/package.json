@@ -1,0 +1,55 @@
+{
+  "name": "demo8",
+  "version": "1.0.0",
+  "description": "demo7+多项目共用配置",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "node ./build/dev-server.js",
+    "build": "node ./build/build",
+    "build-release": "node ./build/build --for release",
+    "build-stage": "node ./build/build --for stage",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liCat/vue-webpack-demos.git"
+  },
+  "keywords": [
+    "vue",
+    "webpack"
+  ],
+  "author": "licat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liCat/vue-webpack-demos/issues"
+  },
+  "homepage": "https://github.com/liCat/vue-webpack-demos#readme",
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-runtime": "^6.9.2",
+    "css-loader": "^0.23.1",
+    "express": "^4.14.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-webpack-plugin": "^2.21.0",
+    "jade": "^1.11.0",
+    "jade-loader": "^0.8.0",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "node-sass": "^3.8.0",
+    "optimist": "^0.6.1",
+    "sass-loader": "^3.2.1",
+    "vue-hot-reload-api": "^2.0.1",
+    "vue-html-loader": "^1.2.2",
+    "vue-loader": "^8.5.2",
+    "vue-style-loader": "^1.0.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.10.0"
+  },
+  "dependencies": {
+    "vue": "^1.0.25"
+  }
+}
