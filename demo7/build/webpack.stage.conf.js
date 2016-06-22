@@ -9,8 +9,8 @@ config.entry = {
 };
 config.output = {
     // 输出路径是 release
-    path: path.resolve(__dirname, `../release`),
-    publicPath: `/`,
+    path: path.resolve(__dirname, `../stage`),
+    publicPath: `https://stage-m.bolo.me/`,
     filename: `[name]_[hash:4].js`,
     chunkFilename: `[id].[chunkhash].js`
 };
