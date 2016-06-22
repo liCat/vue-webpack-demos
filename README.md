@@ -10,7 +10,7 @@
 
 ##[demo5: demo4+开发与打包配置分离。](https://github.com/liCat/vue-webpack-demos/tree/master/demo5)
 
-##[demo6: demo5+提取公共文件和css。](https://github.com/liCat/vue-webpack-demos/tree/mas6)
+##[demo6: demo5+提取公共文件和css。](https://github.com/liCat/vue-webpack-demos/tree/demo6)
 
 ##[demo7: demo6+多环境打包。](https://github.com/liCat/vue-webpack-demos/tree/master/demo7)
 
