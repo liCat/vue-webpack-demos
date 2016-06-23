@@ -3,10 +3,13 @@ const express= require("express"),
       webpack = require("webpack");
 var   argv = require ("optimist").argv;
 
-config = require("./webpack.dev.conf")(argv.pro)
+var config = require("./webpack.dev.conf")(argv.pro);
+
+var proxy = require("./proxy");
 
 // 创建一个express实例
 var app = express();
+proxy.api(app);
 
 // 调用webpack并把配置传递过去
 var compiler = webpack(config)
@@ -17,7 +20,10 @@ var devMiddleware = require('webpack-dev-middleware')(compiler, {
     stats: {
         colors: true,
         chunks: false
-    }
+    },
+    hot: true,
+    historyApiFallback:true,
+    proxy: proxy.proxyList
 })
 // 使用 webpack-hot-middleware 中间件
 var hotMiddleware = require('webpack-hot-middleware')(compiler)

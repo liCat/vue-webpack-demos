@@ -32,7 +32,7 @@
             }
         },
         ready(){
-            this.$http.get("https://a.bolo.me/v1/openapi/app/text",function (data) {
+            this.$http.get("/api/text",function (data) {
                 this.$set('text',data.data.text);
 
             })
